@@ -19,6 +19,7 @@ export interface IIndustryNewsWebPartProps {
   linkOneLabel:string;
   linkTwo:string;
   linkTwoLabel:string;
+  Title:string;
 }
 
 export default class IndustryNewsWebPart extends BaseClientSideWebPart<IIndustryNewsWebPartProps> {
@@ -46,6 +47,7 @@ export default class IndustryNewsWebPart extends BaseClientSideWebPart<IIndustry
         linkOneLabel:this.properties.linkOneLabel,
         linkTwo:this.properties.linkTwo,
         linkTwoLabel:this.properties.linkTwoLabel,
+        Title:this.properties.Title
       }
     );
 
@@ -89,11 +91,14 @@ export default class IndustryNewsWebPart extends BaseClientSideWebPart<IIndustry
         {
           // header: {
           //   description: "Industry News"
-          // },
+          // }, 
           groups: [
             {
               // groupName: strings.BasicGroupName,
               groupFields: [
+                PropertyPaneTextField('Title', {
+                  label: "Title"
+                }),
                 PropertyPaneTextField('subTitle', {
                   label: "Sub Title",
                   multiline: true,

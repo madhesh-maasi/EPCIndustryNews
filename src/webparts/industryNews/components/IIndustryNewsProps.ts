@@ -9,4 +9,5 @@ export interface IIndustryNewsProps {
   linkOneLabel:string;
   linkTwo:string;
   linkTwoLabel:string;
+  Title:string;
 }

@@ -4,7 +4,7 @@ import styles from "./IndustryNews.module.scss";
 const App = (props) => {
   return (
     <div className={styles.industryNews}>
-      <h3>Industry News</h3>
+      <h3>{props.Title}</h3>
       <div className={styles.subTitleSection}>{props.subTitle}</div>
       <div className={styles.urlSection}>
         {props.linkOne && props.linkOne !== "" && (

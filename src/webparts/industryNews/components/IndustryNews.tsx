@@ -22,6 +22,7 @@ export default class IndustryNews extends React.Component<
         linkTwo={linkTwo}
         linkOneLabel={linkOneLabel}
         linkTwoLabel={linkTwoLabel}
+        Title={this.props.Title}
       />
     );
   }
