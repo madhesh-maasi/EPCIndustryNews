@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.14.0",
+    "libraryName": "industry-news",
+    "libraryId": "79925a91-fe58-4d9b-9842-bebd5db263da",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "industry-news",
+    "solutionShortDescription": "industry-news description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
